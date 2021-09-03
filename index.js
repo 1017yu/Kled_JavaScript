@@ -46,12 +46,13 @@ console.log(myTag.outerHTML);
 console.log(myTag.textContent);
 
 // -----------------------------------------------------
-// 요소 노드 만들기: document.createElement('태그이름')
+// 1. 요소 노드 만들기: document.createElement('태그이름')
 const first = document.createElement('li');
 
-// 요소 노드 꾸미기
+// 2. 요소 노드 꾸미기
 first.innerHTML = '처음';
 
-// 요소 노드 추가하기: NODE.prepend, append, after, before
+// 3. 요소 노드 추가하기: NODE.prepend, append, after, before
 tomorrow.prepend(first);
-tomorrow.before('first');
+tomorrow.before('목록');
+today.before('목록');
