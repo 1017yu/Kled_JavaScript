@@ -56,3 +56,7 @@ first.innerHTML = '처음';
 tomorrow.prepend(first);
 tomorrow.before('목록');
 today.before('목록');
+
+const item = tomorrow.children[0];
+// Node.classList.toggle('class') 기존 class가 없으면 추가, 있으면 제거
+item.classList.toggle('done');
